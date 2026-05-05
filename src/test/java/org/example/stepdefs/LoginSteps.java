@@ -1,14 +1,15 @@
 package org.example.stepdefs;
 
 import io.cucumber.java.en.Given;
+import org.example.config.ConfigManager;
 import org.example.context.TestContext;
 import org.example.pages.LoginPage;
 
 public class LoginSteps {
 
-    private static final String url = "https://opensource-demo.orangehrmlive.com/";
-    private static final String username = "Admin";
-    private static final String password = "admin123";
+    private static final String url = ConfigManager.getUrl();
+    private static final String username = ConfigManager.getUsername();
+    private static final String password = ConfigManager.getPassword();
 
     private final TestContext testContext;
 
