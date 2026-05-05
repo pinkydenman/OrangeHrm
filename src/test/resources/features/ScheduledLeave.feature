@@ -1,4 +1,4 @@
-Feature: ScheduledLeave
+Feature: ScheduledLeaves
   Scenario: Search for scheduled leave
 
     Given Alice logs into OrangeHR
