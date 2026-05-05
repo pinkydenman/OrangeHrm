@@ -30,7 +30,11 @@ Shared test setup is handled in:
 
 ## Run the tests
 - Navigate to the project directory.
-- Run `gradlew test`.
+- Set the env variables:
+- $env:ORANGEHRM_URL
+- $env:ORANGEHRM_USERNAME
+- $env:ORANGEHRM_PASSWORD
+- Run `./gradlew test`.
 
 ## Test report
 - The test report is generated in the `build/reports/cucumber-html-reports` directory.
