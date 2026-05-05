@@ -6,11 +6,17 @@ import org.example.pages.DashboardPage;
 
 
 public class DashboardPageSteps {
-    DashboardPage dashboardPage = new DashboardPage(TestContext.getPage());
+
+    private final TestContext testContext;
+
+    public DashboardPageSteps(TestContext testContext) {
+        this.testContext = testContext;
+    }
 
     @When("Alice navigates to Leave")
     public void alice_navigates_to_leave() {
         //ToDo: may need to accomiodate steps to click on menu based on screensize
+        DashboardPage dashboardPage = new DashboardPage(testContext.getPage());
         dashboardPage.goToLeavePage();
     }
 }

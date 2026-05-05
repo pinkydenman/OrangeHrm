@@ -58,7 +58,6 @@ public class ScheduledLeavePage {
                 calendar.locator(".oxd-calendar-header button").nth(0).click();
             }
         }
-//        page.locator("//div[@class='oxd-calendar-date']/div[text()='" + date.getDayOfMonth() + "']").click();
         calendar.locator(".oxd-calendar-date:text-is('" + date.getDayOfMonth() + "')").click();
 
         String expectedDate = date.format(DateTimeFormatter.ofPattern("yyyy-dd-MM"));
